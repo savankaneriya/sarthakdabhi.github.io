@@ -29,6 +29,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="style.css" rel="stylesheet">
 
   </head>
@@ -39,7 +40,7 @@
         <div class="row">
           <div class="col">
             <h1 class="text-center">Sarthak Dabhi</h1>
-            <p class="text-center">Full Stack Developer in Los Angeles</p>
+            <p class="text-center animated pulse">Full Stack Developer in Los Angeles</p>
             <p class="text-center">
               <a href="https://www.linkedin.com/in/sarthakdabhi" target="_blank" class="icon-link text-dark"><i class="fab fa-linkedin-in"></i></a>
               <a href="https://github.com/sarthakdabhi" target="_blank" class="icon-link text-dark"><i class="fab fa-github"></i></a>
@@ -361,6 +362,15 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      (function() {
+        $('.cards, .icon-list, .items, .icon-link').mouseover(function(e) {
+          $(this).addClass('animated pulse');
+        }).mouseleave(function(e) {
+          $(this).removeClass('animated pulse');
+        });
+      })();
+    </script>
   </body>
 </html>
